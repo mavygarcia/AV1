@@ -47,70 +47,29 @@ Na primeira execução, o sistema cria automaticamente um administrador:
 ```
 aerocode/
 ├── src/
-│   ├── index.ts                  # Ponto de entrada e menus
-│   ├── enums.ts                  # Enumerações do sistema
+│   ├── index.ts                  
+│   ├── enums.ts                  
 │   ├── models/
-│   │   ├── Aeronave.ts           # Classe Aeronave
-│   │   ├── Peca.ts               # Classe Peça
-│   │   ├── Etapa.ts              # Classe Etapa
-│   │   ├── Funcionario.ts        # Classe Funcionário
-│   │   ├── Teste.ts              # Classe Teste
-│   │   └── Relatorio.ts          # Classe Relatório
+│   │   ├── Aeronave.ts           
+│   │   ├── Peca.ts               
+│   │   ├── Etapa.ts              
+│   │   ├── Funcionario.ts        
+│   │   ├── Teste.ts              
+│   │   └── Relatorio.ts          
 │   ├── services/
-│   │   └── AuthService.ts        # Autenticação e permissões
+│   │   └── AuthService.ts        
 │   └── utils/
-│       └── input.ts              # Leitura de entrada do terminal
-├── dados/                        # Gerado automaticamente
+│       └── input.ts              
+├── dados/                        
 │   ├── aeronaves.txt
 │   ├── funcionarios.txt
 │   └── relatorio_*.txt
-├── test.ts                       # Script de testes
+├── test.ts                       
 ├── package.json
 └── tsconfig.json
 ```
-
 ---
 
-## Funcionalidades
-
-### Gestão de Aeronaves
-- Cadastrar aeronave com código único, modelo, tipo, capacidade e alcance
-- Listar todas as aeronaves cadastradas
-- Ver detalhes completos de uma aeronave
-
-### Gestão de Funcionários
-- Cadastrar funcionários com nome, telefone, endereço, usuário e senha
-- Definir nível de permissão: Administrador, Engenheiro ou Operador
-- Listar todos os funcionários
-
-### Gestão de Peças
-- Adicionar peças a uma aeronave com nome, tipo e fornecedor
-- Acompanhar o status da peça: Em Produção → Em Transporte → Pronta
-
-### Gestão de Etapas
-- Adicionar etapas de produção com nome e prazo
-- Iniciar e finalizar etapas seguindo ordem lógica obrigatória
-- Associar funcionários responsáveis a cada etapa
-
-### Gestão de Testes
-- Registrar testes elétricos, hidráulicos e aerodinâmicos
-- Marcar resultado como Aprovado ou Reprovado
-
-### Relatório de Entrega
-- Gerar relatório completo com dados da aeronave, peças, etapas e testes
-- Salvar relatório em arquivo de texto na pasta `dados/`
-
----
-
-## Níveis de permissão
-
-| Nível          | Pode cadastrar funcionários | Pode cadastrar aeronaves | Acesso geral |
-|----------------|-----------------------------|--------------------------|--------------|
-| Administrador  | Sim                         | Sim                      | Sim          |
-| Engenheiro     | Não                         | Sim                      | Sim          |
-| Operador       | Não                         | Não                      | Sim          |
-
----
 
 ## Persistência de dados
 
