@@ -1,0 +1,16 @@
+{
+  "name": "aerocode",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão de Produção de Aeronaves - Aerocode",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.ts",
+    "dev": "ts-node src/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
