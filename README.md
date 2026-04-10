@@ -71,11 +71,7 @@ AV1/
 ---
 
 
-## Persistência de dados
 
-Todos os dados são salvos automaticamente em arquivos de texto na pasta `dados/` ao encerrar o sistema ou realizar alterações. Os dados são carregados automaticamente na próxima execução.
-
----
 
 
 
