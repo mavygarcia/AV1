@@ -10,7 +10,7 @@ Sistema CLI desenvolvido em TypeScript para gerenciar o processo completo de pro
 
 ```bash
 # Clone ou extraia o projeto na sua máquina
-cd aerocode
+cd AV1
 
 # Instale as dependências
 npm install
@@ -45,7 +45,7 @@ Na primeira execução, o sistema cria automaticamente um administrador:
 ## Estrutura do projeto
 
 ```
-aerocode/
+AV1/
 ├── src/
 │   ├── index.ts                  
 │   ├── enums.ts                  
